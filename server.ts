@@ -2,7 +2,7 @@ import * as express from 'express';
 import {ng2engine} from 'angular2-universal-preview';
 
 // Angular 2
-import {App} from './src/app';
+//import {App} from './src/app';
 
 let app = express();
 
@@ -15,7 +15,8 @@ app.set('view engine', 'ng2.html');
 app.use(express.static(__dirname));
 
 app.use('/', (req, res) => {
-  res.render('index', { App });
+  //res.render('index', { App });
+  res.render('index', {});
 });
 
 app.listen(3000, () => {

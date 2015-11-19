@@ -2,8 +2,8 @@ import {Component, NgFor} from 'angular2/angular2';
 
 @Component({
     selector: 'app',
-    templateUrl: `
-        <h1>Mikkel Damm Angular App Demo</h1>
+    template: `
+        <h1>Mikkel Damm Angular App Demo2</h1>
         <ul>
             <li *ng-for="#person of persons" (click)="removePerson(person)">
                 {{person}}
